@@ -96,11 +96,7 @@ margin-top: 5px;
   height: 195px;
     overflow-y: scroll;
   }
-  @media screen and (min-width:700px) {
-    .stafftitle{
-      height: 107px;
-    }
-  }
+  
   @media screen and (min-width:900px) {
     .staPhotoffBoxSmall ul li{
         margin: 3px;
@@ -116,11 +112,5 @@ margin-top: 5px;
         width: 35%;
         margin-right:90px ;
     }
-   
-    .stafftitle{
-        background-size: unset;
-        height: 130px;
-        background-position: center;
- 
-    }
+  
  }

@@ -2,7 +2,7 @@
 /*toyo*/
 .system{
    width: 80%;
-   height: 1800px;
+   height: 2000px;
     background-image: url(../img/system.png);
   }
   .room{
@@ -71,11 +71,9 @@
 }
 
 }
-@media screen and (min-width:900px) {
-  .system{
-    height: 1300px;
-  }
+/* @media screen and (min-width:900px) {
   .roomtitle{
+    width: 400px;
     height: 130px;
     background-size: unset;
     background-position: center;
@@ -84,13 +82,15 @@
     width: 78%;
   }
 .recruittitle{
+  width: 400px;
   height: 130px;
   background-size: unset;
   background-position: center;
   }
 .accesstitle{
+  width: 400px;
   height: 130px;
 background-size: unset;
 background-position: center;
 }
-}
+} */

@@ -3,8 +3,8 @@ var myList = document.getElementById('getMyStaff');
 var pcGirlAll = document.getElementById('pcGirlAll');
 var apiList1 = document.getElementById('PcGirlPhoto');
 var myList2 = document.getElementById('catchMynews1');
-var myApi ="https://test-cms-alpha.herokuapp.com/sites/1/profiles.json"
-var myApi1 ="https://test-cms-alpha.herokuapp.com/sites/1/tweets.json"
+var myApi ="https://test-cms-alpha.herokuapp.com/sites/5/profiles.json"
+var myApi1 ="https://test-cms-alpha.herokuapp.com/sites/5/tweets.json"
 
 function loadMyStaff(){
   let xhr = new XMLHttpRequest();

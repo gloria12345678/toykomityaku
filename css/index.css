@@ -1,0 +1,227 @@
+/*10/8*/
+/*toyo*/
+
+/* .girlPhoto{
+} */
+/* .pc{
+    width: 900px;
+} */
+.tels{
+    /* width: 600px;
+    height: 100px;
+    background-color: aliceblue; */
+    position: relative;
+    top: 240px;
+    left: 236px;
+}
+.tel{
+    width: 600px;
+    height: 100px;
+    background-color: aliceblue;
+}
+.asd{
+    width: 900px;
+    height: 150px;
+    background-image: url(../img/asd.png);
+    background-size: 80%;
+    background-position: center;
+}
+.girlPhotoBigBox{
+ 
+    background-size: 52%;
+    background-color: #ffd6d6;
+    background-image: url(../img/photoBack.png);
+    background-repeat: repeat;
+    border: 3px #f988a6 solid;
+    border-radius: 5px;
+}
+.girlPhotoBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.girlPhotoBox img{
+    width: 90%;
+    height: 94%;
+    object-fit: contain;
+}
+.girlPhotoName{
+    width: 95%;
+    height: 12%;
+    background-color: #ffffff;
+    color: #ff3636;
+    font-size: 19px;
+    text-align: center;
+    vertical-align: middle;
+    border: 3px #ff658d solid;
+}
+.event{
+    height: 180px;
+    background-image: url(../img/event.png);
+}
+.news{
+    /* background-color: #310203; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.newsTitle{
+    height: 10%;
+    background-image: url(../img/news.png);
+}
+.twitterTitle{
+    height: 10%;
+    background-image: url(../img/twitter.png);
+}
+.scheduleTitle{
+    height: 300px;
+    width: 800px;
+    background-image: url(../img/schedule.png);
+}
+.newsText{
+    overflow-y: scroll;
+    border: 2px #ffffff solid;
+    border-radius: 10px;
+    background-image: url(../img/newsBack.png);
+    background-size: auto;
+    background-position: bottom;
+    background-position-x: right;
+}
+.twtter{
+    width: 900px;
+    height: 600px;
+    overflow-y: scroll;
+    border: 2px #ffffff solid;
+    border-radius: 10px;
+    background-image: url(../img/newsBack.png);
+    background-size: auto;
+    background-position: bottom;
+    background-position-x: right;
+}
+.text{
+    height: 420px;
+    width: 95%;
+    margin: 3%;
+    font-size: 15px;
+    color:  #fbdada;
+}
+.text p{
+    width: 100%;
+    color: orange;
+}
+.map{
+    background-image: url(../img/accerss.png);
+}
+.map1{
+    background-image: url(../img/map1.png);
+}
+.line{
+    background-image: url(../img/line.png);
+}
+.footbtn{
+    width: 1002px;
+    height: 334px;
+    overflow-y: scroll;
+    border-radius: 10px;
+    background-image: url(../img/endlist.png);
+    background-size: auto;
+    background-position: bottom;
+    background-position-x: right;
+
+}
+/* @media screen and (min-width:700px) {
+    .news {
+        height: 862px;
+    }
+    .newsText {
+        height: 83%;
+    }
+.newsTitle ,.twitterTitle{
+    height: 12%;
+}
+.endimg {
+    height: 245px;
+}
+
+} */
+/*@media screen and (min-width:900px) {*/
+
+    .pc{
+        height: 1137px;
+    }
+    .Mobile{
+        display: none;
+    }
+    .right{
+        width: 600px;
+        height: 100%;
+        float: right;
+    }
+    .left{
+        width: 300px;
+        height: 100%;
+        float: left;
+    }
+    .event {
+        width: 900px;
+        height: 795px;
+    }
+    .focus {
+        width: 900px;
+        height: 320px;
+    }
+    .aaa{
+        width: 900px;
+        height: 518px;
+    }
+    .girlPhoto{
+        float: left;
+        width: 300px;
+        height: 450px;
+    }
+    /* .girlPhotoBox{
+        width: 80%;
+        height: 80%;
+    } */
+    .news{
+        float: right;
+        width: 600px;
+        height: 455px;
+        float: left;
+    }
+    .news1{
+        width: 500px;
+        height: 265px;
+        overflow-y: scroll;
+
+    }
+    .text {
+        height: 238px;
+        width: 95%;
+    }
+    
+   .newsText {
+    width: 570px;
+    height: 455px;
+    }
+    .newsTitle ,.twitterTitle{
+        width: 800px;
+        height: 123px;
+        background-size: contain;
+    }
+    .line ,.map ,.map1{
+        width: 99%;
+        height: 162px;
+        margin: 10px;
+    }
+    .swiper-container {
+        background-size: 52%;
+        background-repeat: repeat;
+        border: 3px #ffffff solid;
+        border-radius: 5px;
+    }

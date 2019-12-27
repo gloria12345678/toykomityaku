@@ -1,0 +1,39 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><title>東京密着回春倶楽部in池袋リラクセーション　マッサージ　メンズエステ　リンパマッサージ【東京密着回春倶楽部】</title><meta name="google-site-verification"/><meta name="keywords" content="東京密着回春倶楽部池袋エステ,東京密着回春倶楽部アジア，アロママッサージ,精力回復,ストレス解消,アロマオイル,ボディケア,フットケア"/><meta name="description" content="池袋本格アロママッサージ，東京密着回春倶楽部でございます，オイルマッサージで精力を増強します，仕事のストレスを解消いただきます。"/><meta name="viewport" content="width=device-width,user-scalable=yes"/><script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="swiper.min.css"/><link rel="stylesheet" href="css/nav_top.css"/></head><body class="body"><div class="top"><a class="tel" href="tel://07042864292"><div class="tels"></div></a></div><div class="navLage"><div class="navButton"><a href="top.html"><img src="img/images/nav_01.png"/></a></div><div class="navButton"><a href="system.html"><img src="img/images/nav_02.png"/></a></div><div class="navButton"><a href="girl.html"><img src="img/images/nav_03.png"/></a></div><div class="navButton"><a href="schedules.html"><img src="img/images/nav_04.png"/></a></div><div class="navButton"><a href="room.html"><img src="img/images/nav_05.png"/></a></div><div class="navButton"><a href="recruit.html"><img src="img/images/nav_06.png"/></a></div><div class="navButton"><a href="access.html"><img src="img/images/nav_07.png"/></a></div></div></body></html><script>var d =window.location.search.split("")
+console.log(d);</script><link rel="stylesheet" href="css/staff1.css"/><div class="staff" id="aaa"><div class="swiper-scrollbar"></div></div><script>var apiList = document.getElementById('aaa');
+var myApi ="https://test-cms-alpha.herokuapp.com/sites/1/profiles.json";
+fetch(myApi)
+.then(function(response) {
+  if (!response.ok) {
+   // throw new Error("HTTP error, status = " + response.status);
+ }
+ return response.json();
+})
+.then(function(json) {
+  console.log(json);
+  var girlPhoto =document.createElement("div");
+  girlPhoto.setAttribute("class","staffBox");
+  var a = d[1];
+  console.log(a);
+  var img =new Array
+  for(var j=0;j<3;j++){
+  img[j] ="https://test-cms-alpha.herokuapp.com"+json[a].avatars[j];
+    if(img[j]=="https://test-cms-alpha.herokuapp.comundefined"){
+       img[j]="staff/all.jpg"
+  }
+ }
+  girlPhoto.innerHTML = '<div class="Titles"><div class="stafftitle"><h5>' + json[a].name+ '</h5></div></div><p>年齢:' + json[a].age+ '</p><p>3サイズ：' + json[a].abstract+ '</p><div class="staPhotoffBox"><div class="staBigPhotoffBox"><div class="swiper-container swiper-container1" id="swiper0"><div class="swiper-wrapper"><div class="swiper-slide swiper-slide1"><img src="'+img[0]+'"></div> <div class="swiper-slide"><img  id="" src="'+img[1]+'"></div> <div class="swiper-slide"><img id="" src="'+img[2]+'"></div> </div> <div class="swiper-button-prev"></div><div class="swiper-button-next"></div> </div> </div><div class="staPhotoffBoxSmall"><ul><li><img  id="" src="'+img[0]+'" ></li> <li><img  id="" src="'+img[1]+'"></li><li><img  id="" src="'+img[2]+'"></li> </ul></div></div> <div class="txt"><br><h4>'+ json[a].description+'</h4></div> ';
+  apiList.appendChild(girlPhoto);
+  var mySwiper = new Swiper('#swiper0',{
+     direction : 'horizontal',
+     prevButton:'.swiper-button-prev',
+     nextButton:'.swiper-button-next',
+     })
+ })
+.catch(function(error) {
+ var p = document.createElement('p');
+ p.appendChild(
+   document.createTextNode('Error: ' + error.message)
+ );
+ document.body.insertBefore(p, apiList);
+});
+ </script> </script><div class="endimg"><a href="tel://07042864292"></a></div><div class="end"><div class="logo"></div><div class="tel"><a href="tel://#{shopTelephon}"></a></div></div><div class="footing"></div><h1>東京密着回春倶楽部in池袋</h1><script src="swiper.min.js"></script><script src="js/index.js"></script>

@@ -1,0 +1,96 @@
+/*10/8*/
+/*toyo*/
+.system{
+   width: 80%;
+   height: 1800px;
+    background-image: url(../img/system.png);
+  }
+  .room{
+    height: 900px;
+    background-image: url(../img/room.png);
+  }
+  .access{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .access div{
+    height: 57px;
+    font-size: 19px;
+    width: 85%;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px #f33b6a solid;
+    color: #ffffff;
+    margin-top: 9px;
+    background-color: #ffbe98;
+  }
+  .recruit{
+    width: 70%;
+    height: 700px;
+    border: 4px #fdf258 solid;
+
+  }
+  p{
+    height: 27px;
+    font-size: 18px;
+    background-color: #ffffff70;
+    color: #f5c94b;
+  }
+  .recruit div{
+    width: 96%;
+    height: 58px;
+    border-bottom: 2px #ffffff solid;
+    padding: 5px;
+  }
+  .roomtitle{
+    width: 400px;
+    height: 166px;
+    background-image: url(../img/hotelttitle.png); 
+}
+.accesstitle{
+  width: 400px;
+  height: 166px;
+  background-image: url(../img/linktitle.png); 
+}
+.recruittitle{
+  width: 400px;
+  height: 166px;
+  background-image: url(../img/recruittitle.png); 
+}
+.googleMap0 ,.googleMap1{
+  width: 85%;
+  border: 4px #fd5a58 solid;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+@media screen and (min-width:700px) {
+  .roomtitle ,.accesstitle ,.recruittitle{
+    height: 107px;
+}
+
+}
+@media screen and (min-width:900px) {
+  .system{
+    height: 1300px;
+  }
+  .roomtitle{
+    height: 130px;
+    background-size: unset;
+    background-position: center;
+}
+.recruit{
+    width: 78%;
+  }
+.recruittitle{
+  height: 130px;
+  background-size: unset;
+  background-position: center;
+  }
+.accesstitle{
+  height: 130px;
+background-size: unset;
+background-position: center;
+}
+}

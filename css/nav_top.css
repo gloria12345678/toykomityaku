@@ -1,0 +1,227 @@
+/*10/8*/
+/*toyo*/
+*{
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    list-style-type: none;
+}
+h1{
+    display: none;
+}
+a{
+    color: #ffffff;
+    text-decoration:none;
+    vertical-align: initial;
+}
+.body{
+    width: 1100px;
+    background-color:#000000;/*改*/
+    background-image:url(../img/back.png);
+    background-repeat: repeat-y;
+    background-size: auto;
+    /* background-position: center; */
+}
+.nav{
+    display: none;
+    width: 98.7%;
+    position: fixed;
+    z-index: 10;
+    height: 41px;
+    background-color: #ff6464;
+    border: 3px #ffffff solid
+}
+
+.telephone{
+    width: 86%;
+    height: 95%;
+    float: left;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 2px;
+    border-right: 4px #ffffff solid;
+}
+.navimg{
+    height: 82%;
+    width: 9%;
+    margin: 7px;
+    background-image: url(../img/list.png);
+    float: right;
+}
+.navLong{
+    width: 65%;
+    position:fixed;
+    z-index: 15;
+    background-color: #ffa1be;
+    display: none;
+    border: 2px white solid;
+}
+
+.navLong1{
+    width: 92%;
+    height: 37px;
+    border: 3px white solid;
+    border-radius: 10px;
+    padding-top: 11px;
+    font-size: 19px;
+    margin: 6px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: salmon;
+}
+.navLongLogo {
+    margin-top: 5px;
+    height: 130px;
+    text-align: center;
+    vertical-align: middle;
+    background-size: contain;
+    background-position-x: center;
+    background-image: url(../img/logo.png);
+}
+.navLong2{
+    border-top: 3px salmon solid;
+    position: absolute;
+    z-index: 10;
+    bottom: 0px;
+    height: 55px;
+    font-size: 19px;
+    text-align: center;
+    padding-top: 15px;
+    vertical-align: middle;
+}
+.top{
+    height: 500px;
+    width: 1100px;
+    background-image: url(../img/top.png);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.navLage{
+    height:120px;
+}
+.navButton{
+    height:50px;
+    width: 14.27%;
+    background-color: chocolate;
+    float: left;
+}
+.swiper-container{
+     /* width: 100%; */
+    height: 100%;
+}
+.swiper-slide{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-size: 80%;
+    background-position: center;
+} 
+.footing{
+    display: none;
+    position:fixed;
+    z-index: 10;
+    bottom:0px;
+    height: 50px;
+    background-color: violet;
+}
+.end{
+    display: none;
+    height: 135px;/*需要调试*/
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.endimg{
+    height: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/end.png);
+}
+.endimg a{
+    height: 80px;
+}
+.Titles{
+    height: 117px;
+    /* background-image: url(../img/titleback.png); */
+    background-repeat: repeat-x;
+    background-size: unset;
+}
+@media screen and (min-width:700px) {
+    .tel{
+        width: 233px;
+        height: 63px;
+        background-image: url(../img/tel.png);
+        display: block;
+    }
+    .topTxt{ 
+        display:none;
+    }
+    .topTxt1{
+        display: block;
+        display: flex;
+    }
+    .top{
+    justify-content:space-between;
+    padding-top: 98px;
+    }
+    .nav {
+        width: 99%;
+        height: 79px;
+    }
+    .telephone {
+        font-size: 50px;
+    }
+    .endimg{
+        display: none;
+    }
+    .end{
+        display: block;
+        height: 180px;/*需要调试*/
+        justify-content:space-between;
+        display: flex;
+        background-color: #ffcccc;
+    }
+    .Titles{
+        height: 107px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    body{
+        width: 900px;
+    }
+
+    *{
+        /* width: 900px; */
+        margin: 0px auto;
+    }
+    .top{
+        padding-top: 0px;
+        }
+    .nav{
+        display: none;
+    }
+    .navLage{
+        display: block;
+    }
+    .Titles{
+        height: 140px;
+        background-repeat: repeat-x;
+        background-size: unset;
+    }
+     /* .end{
+        
+    } */
+    .endimg{
+        display: none;
+        
+    }
+}

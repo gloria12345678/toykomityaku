@@ -1,0 +1,19 @@
+.schedules{
+    width: 900px;
+}
+.schedulesGirl{
+    width: 100px;
+    float: left;
+}
+/* .date{
+    width: 100px;
+    float: left;
+} */
+.schedulesGirl{
+    display: none;
+    
+}
+#schedulesGirl0{
+    display: block;
+    
+}

@@ -155,6 +155,12 @@ a{
     background-size: unset;
 }
 @media screen and (min-width:700px) {
+    /* .tel{
+        width: 233px;
+        height: 63px;
+        background-image: url(../img/tel.png);
+        display: block;
+    } */
     .topTxt{ 
         display:none;
     }
@@ -191,6 +197,7 @@ a{
 @media screen and (min-width:900px) {
     body{
         width: 900px;
+         background-position: center;
     }
 
     *{

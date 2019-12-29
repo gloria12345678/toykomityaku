@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><title>東京密着回春倶楽部in池袋リラクセーション　マッサージ　メンズエステ　リンパマッサージ【東京密着回春倶楽部】</title><meta name="google-site-verification"/><meta name="keywords" content="東京密着回春倶楽部池袋エステ,東京密着回春倶楽部アジア，アロママッサージ,精力回復,ストレス解消,アロマオイル,ボディケア,フットケア"/><meta name="description" content="池袋本格アロママッサージ，東京密着回春倶楽部でございます，オイルマッサージで精力を増強します，仕事のストレスを解消いただきます。"/><meta name="viewport" content="width=device-width,user-scalable=yes"/><script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="swiper.min.css"/><link rel="stylesheet" href="css/nav_top.css"/></head><body class="body"><div class="top"><a class="tel" href="tel://07042864292"><div class="tels"></div></a></div><div class="navLage"><div class="navButton"><a href="top.html"><img src="img/images/nav_01.png"/></a></div><div class="navButton"><a href="system.html"><img src="img/images/nav_02.png"/></a></div><div class="navButton"><a href="girl.html"><img src="img/images/nav_03.png"/></a></div><div class="navButton"><a href="schedules.html"><img src="img/images/nav_04.png"/></a></div><div class="navButton"><a href="room.html"><img src="img/images/nav_05.png"/></a></div><div class="navButton"><a href="recruit.html"><img src="img/images/nav_06.png"/></a></div><div class="navButton"><a href="access.html"><img src="img/images/nav_07.png"/></a></div></div></body></html><script>var d =window.location.search.split("")
+console.log(d);</script><link rel="stylesheet" href="css/staff1.css"/><div class="staff" id="aaa"><div class="swiper-scrollbar"></div></div><script>var apiList = document.getElementById('aaa');
+var myApi3 ="https://test-cms-alpha.herokuapp.com/sites/1/schedules.json"
+function addNewSchedules(MyJson){
+ for(let i = 0; i < MyJson.length; i++){
+   let ss =new Date(MyJson[i].period)
+   let t =ss.toString();
+   let addDate = t.substring(4,16);
+   let addDate1 = t.substring(4,11);
+   let addtime1 = t.substring(16,18);
+   let addtime2 = t.substring(19,21);
+   MyJson[i].date= addDate;
+   MyJson[i].date1= addDate1;
+   MyJson[i].profile.time= addtime1+'時〜'+addtime2+'時';
+ }
+ function sortNumber(x, y){
+   return  new Date(x.date)-new Date(y.date).getTime();
+ }
+ return MyJson.sort(sortNumber)
+}
+function groupBy( array , f ) {
+ let groups = {};
+ array.forEach( function( o ) {
+   let group = JSON.stringify( f(o) );
+     groups[group] = groups[group] || [];
+     groups[group].push( o );
+     
+ });
+ return Object.keys(groups).map( function(group) {
+     return groups[group];
+ });
+}
+function loadMySchedules(){
+ let xhr = new XMLHttpRequest();
+ xhr.open("GET",myApi3,true);
+ xhr.onload = function(){
+   if(this.status == 200){
+     let json =new Array
+     json = JSON.parse(this.responseText);
+     console.log(json);
+      let newList = addNewSchedules(json)
+     let sorted = groupBy(newList, function(item){
+       return [item.date];
+     })
+     console.log(sorted);
+     console.log(d[1]);
+     console.log(d[2]);
+     let a =d[1]
+     let b =d[2]
+    var girlPhoto =document.createElement("div");
+    girlPhoto.setAttribute("class","staffBox");
+   var img =new Array
+  for(var j=0;j<3;j++){
+    img[j] ="https://test-cms-alpha.herokuapp.com"+sorted[a][b].profile.avatars[j];
+    if(img[j]=="https://test-cms-alpha.herokuapp.comundefined"){
+       img[j]="staff/all.jpg"
+  }
+ }
+  girlPhoto.innerHTML = '<div class="staPhotoffBox"><div class="staBigPhotoffBox"><div class="swiper-container swiper-container1" id="swiper0"><div class="swiper-wrapper"><div class="swiper-slide swiper-slide1"><img src="'+img[0]+'"><div class="watermark"></div></div> <div class="swiper-slide"><img  id="" src="'+img[1]+'"><div class="watermark"></div></div><div class="swiper-slide"> <img id="" src="'+img[2]+'"><div class="watermark"></div></div> </div> <div class="swiper-button-prev"></div> <div class="swiper-button-next"></div> </div> </div><div class="staPhotoffBoxSmall"><ul><li><img src="'+img[0]+'" ><div class="watermark1"></div></li> <li><img  id="" src="'+img[1]+'"><div class="watermark1"></div></li><li><img  id="" src="'+img[2]+'"><div class="watermark1"></div></li> </ul></div></div> <div class="txt"><div class="Titles"><div class="stafftitle"> <h5>' + sorted[a][b].profile.name+ '</h5></div></div> <br><p>年齢:' + sorted[a][b].profile.age+ '</p><br><p>3サイズ：' + sorted[a][b].profileabstract+ '</p><br><h4>'+ sorted[a][b].profile.description+'</h4></div> ';
+  apiList.appendChild(girlPhoto);
+  var mySwiper = new Swiper('#swiper0',{
+     direction : 'horizontal',
+     prevButton:'.swiper-button-prev',
+     nextButton:'.swiper-button-next',
+     })
+   }          
+ }
+ xhr.send();
+ }
+ loadMySchedules()</script><div class="endimg"><div class="footbtn"><div class="footnav"><a href="system.html"></a></div><div class="footnav"><a href="girl.html"></a></div><div class="footnav"><a href="schedules.html"></a></div><div class="footnav"><a href="recruit.html"></a></div><div class="footnav"><a href="room.html"></a></div><div class="footnav"><a href="access.html"></a></div></div></div><div class="endimg"><div class="footlogo"></div><div class="footline"></div></div><h1>東京密着回春倶楽部in池袋</h1><script src="swiper.min.js"></script><script src="js/index.js"></script>

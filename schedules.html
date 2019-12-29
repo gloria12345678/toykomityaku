@@ -1,1 +1,91 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"/><title>東京密着回春倶楽部in池袋リラクセーション　マッサージ　メンズエステ　リンパマッサージ【東京密着回春倶楽部】</title><meta name="google-site-verification"/><meta name="keywords" content="東京密着回春倶楽部池袋エステ,東京密着回春倶楽部アジア，アロママッサージ,精力回復,ストレス解消,アロマオイル,ボディケア,フットケア"/><meta name="description" content="池袋本格アロママッサージ，東京密着回春倶楽部でございます，オイルマッサージで精力を増強します，仕事のストレスを解消いただきます。"/><meta name="viewport" content="width=device-width,user-scalable=yes"/><script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="swiper.min.css"/><link rel="stylesheet" href="css/nav_top.css"/></head><body class="body"><div class="top"><a class="tel" href="tel://07042864292"><div class="tels"></div></a></div><div class="navLage"><div class="navButton"><a href="top.html"><img src="img/images/nav_01.png"/></a></div><div class="navButton"><a href="system.html"><img src="img/images/nav_02.png"/></a></div><div class="navButton"><a href="girl.html"><img src="img/images/nav_03.png"/></a></div><div class="navButton"><a href="schedules.html"><img src="img/images/nav_04.png"/></a></div><div class="navButton"><a href="room.html"><img src="img/images/nav_05.png"/></a></div><div class="navButton"><a href="recruit.html"><img src="img/images/nav_06.png"/></a></div><div class="navButton"><a href="access.html"><img src="img/images/nav_07.png"/></a></div></div></body></html><link rel="stylesheet" href="css/schedules.css"/><div class="Titles"><div class="recruittitle"></div></div><div class="schedules" id="dates"></div><div class="schedulesGirls" id="schedulesGirls"></div><div class="endimg"></div><div class="footing"></div><h1>東京密着回春倶楽部in池袋</h1><script src="swiper.min.js"></script><script src="js/index.js"></script>
+<!DOCTYPE html><html><head><meta charset="utf-8"/><title>東京密着回春倶楽部in池袋リラクセーション　マッサージ　メンズエステ　リンパマッサージ【東京密着回春倶楽部】</title><meta name="google-site-verification"/><meta name="keywords" content="東京密着回春倶楽部池袋エステ,東京密着回春倶楽部アジア，アロママッサージ,精力回復,ストレス解消,アロマオイル,ボディケア,フットケア"/><meta name="description" content="池袋本格アロママッサージ，東京密着回春倶楽部でございます，オイルマッサージで精力を増強します，仕事のストレスを解消いただきます。"/><meta name="viewport" content="width=device-width,user-scalable=yes"/><script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="swiper.min.css"/><link rel="stylesheet" href="css/nav_top.css"/></head><body class="body"><div class="top"><a class="tel" href="tel://07042864292"><div class="tels"></div></a></div><div class="navLage"><div class="navButton"><a href="top.html"><img src="img/images/nav_01.png"/></a></div><div class="navButton"><a href="system.html"><img src="img/images/nav_02.png"/></a></div><div class="navButton"><a href="girl.html"><img src="img/images/nav_03.png"/></a></div><div class="navButton"><a href="schedules.html"><img src="img/images/nav_04.png"/></a></div><div class="navButton"><a href="room.html"><img src="img/images/nav_05.png"/></a></div><div class="navButton"><a href="recruit.html"><img src="img/images/nav_06.png"/></a></div><div class="navButton"><a href="access.html"><img src="img/images/nav_07.png"/></a></div></div></body></html><link rel="stylesheet" href="css/schedules.css"/><div class="Titles"><div class="recruittitle"></div></div><div class="schedules" id="dates"></div><div class="schedulesGirls" id="schedulesGirls"></div><div class="endimg"><div class="footbtn"><div class="footnav"><a href="system.html"></a></div><div class="footnav"><a href="girl.html"></a></div><div class="footnav"><a href="schedules.html"></a></div><div class="footnav"><a href="recruit.html"></a></div><div class="footnav"><a href="room.html"></a></div><div class="footnav"><a href="access.html"></a></div></div></div><div class="endimg"><div class="footlogo"></div><div class="footline"></div></div><h1>東京密着回春倶楽部in池袋</h1><script src="swiper.min.js"></script><script src="js/index.js"></script><script>var  schedulesDate= document.getElementById('dates');
+var  schedulesGirls= document.getElementById('schedulesGirls'); 
+var myApi3 ="https://test-cms-alpha.herokuapp.com/sites/1/schedules.json"
+function addNewSchedules(MyJson){
+ for(let i = 0; i < MyJson.length; i++){
+   let ss =new Date(MyJson[i].period)
+   let t =ss.toString();
+   let addDate = t.substring(4,16);
+   let addDate1 = t.substring(4,11);
+   let addtime1 = t.substring(16,18);
+   let addtime2 = t.substring(19,21);
+   MyJson[i].date= addDate;
+   MyJson[i].date1= addDate1;
+   MyJson[i].profile.time= addtime1+'時〜'+addtime2+'時';
+ }
+ function sortNumber(x, y){
+   return  new Date(x.date)-new Date(y.date).getTime();
+ }
+ return MyJson.sort(sortNumber)
+}
+function groupBy( array , f ) {
+ let groups = {};
+ array.forEach( function( o ) {
+   let group = JSON.stringify( f(o) );
+     groups[group] = groups[group] || [];
+     groups[group].push( o );
+     
+ });
+ return Object.keys(groups).map( function(group) {
+     return groups[group];
+ });
+}
+function loadMySchedules(){
+ let xhr = new XMLHttpRequest();
+ xhr.open("GET",myApi3,true);
+ xhr.onload = function(){
+   if(this.status == 200){
+     let json =new Array
+     json = JSON.parse(this.responseText);
+     console.log(json);
+      let newList = addNewSchedules(json)
+     let sorted = groupBy(newList, function(item){
+       return [item.date];
+     })
+     let listLength 
+     if(sorted.length>=7){
+       listLength = 7
+     }else{
+       listLength = sorted.length
+     }
+     console.log(listLength);
+     for(let i = 0; i < listLength; i++) {
+       var date =document.createElement("div");
+       date.setAttribute("class","date");
+       date.setAttribute("id","date"+i);
+       date.innerHTML = '<p>'+sorted[i][0].date1+'</p>';
+       schedulesDate.appendChild(date);
+     }
+     for(let k = 0; k < listLength; k++) {
+       var schedulesGirl =document.createElement("div");
+       schedulesGirl.setAttribute("class","schedulesGirl");
+       schedulesGirl.setAttribute("id","schedulesGirl"+k);
+       schedulesGirls.appendChild(schedulesGirl);
+
+       for(let j = 0; j < sorted[k].length; j++){
+         var photo =document.createElement("div");
+         photo.setAttribute("class","photo");
+         photo.innerHTML = '<div class="l" id="l'+k+''+j+'"><div class="watermark"></div><img src="https://test-cms-alpha.herokuapp.com'+sorted[k][j].profile.avatars[0]+'"></div><div>'+sorted[k][j].profile.name+''+sorted[k][j].profile.age+'</div><div>'+sorted[k][j].profile.time+'</div>';
+         schedulesGirl.appendChild(photo);
+         var l = document.getElementById("l"+k+j);
+         //console.log(l)
+         l.addEventListener('click', locationStaff, true);
+           function locationStaff (){
+             console.log(k,j)
+             var v= document.getElementById("l"+k+j);
+          console.log('staff.html?id='+k,j)
+          window.location.href = 'girl_.html?'+k+j+'&aassdfwdw##5345afasdfqweqw';
+         };
+       }
+     }
+     $(document).ready(function(){
+       $('.schedules div').click(function(){
+       $('.schedulesGirls .schedulesGirl').hide();
+       $('.schedulesGirls .schedulesGirl').eq($(this).index()).show();
+       });
+     });
+   }          
+ }
+ xhr.send();
+ }
+ loadMySchedules()</script>

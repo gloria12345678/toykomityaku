@@ -4,11 +4,10 @@
     text-decoration:none
 }
 .body{
-        width: 1100px;
-        background-color:#000000;/*改*/
-        background-image:url(../img/back.png);
-        background-repeat: repeat-y;
-        background-size: auto;
+    width: 1100px;
+    background:repeat-y url(../img/back.png);
+    background-color: #1b1b1b;
+    background-size: auto;
 }
 .logo{
     background: url(../img/top.png) bottom;
@@ -53,16 +52,22 @@
 
 .event{
     height: 800px;
-    background-image: url(../img/event.png);
-    width: 984px;
+    background-image: url(../img/event.gif);
+    width: 1006px;
 }
 .end{
     color: aliceblue;
-    width: 700px;
+    width: 960px;
     height: 782px;
     background-image: url(../img/end.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 304px;
     margin-top: 65px;
+}
+@media screen and (min-width:1200px) {
+    .body{
+        width: 100%;
+        background-position: bottom;
+    }
 }

@@ -6,20 +6,13 @@
 /* .pc{
     width: 900px;
 } */
-.tels{
-    /* width: 600px;
-    height: 100px;
-    background-color: aliceblue; */
-    width: 600px;
-    height: 100px;
-    position: relative;
-    top: 240px;
-    left: 236px;
-}
 .tel{
     width: 600px;
     height: 100px;
     background-color: aliceblue;
+}
+.asda{
+ display: none;
 }
 .asd{
     width: 900px;
@@ -63,7 +56,7 @@
 }
 .event{
     height: 180px;
-    background-image: url(../img/event.png);
+    background-image: url(../img/event.gif);
 }
 .news{
     /* background-color: #310203; */
@@ -125,17 +118,7 @@
 .line{
     background-image: url(../img/line.png);
 }
-.footbtn{
-    width: 1002px;
-    height: 334px;
-    overflow-y: scroll;
-    border-radius: 10px;
-    background-image: url(../img/endlist.png);
-    background-size: auto;
-    background-position: bottom;
-    background-position-x: right;
 
-}
 /* @media screen and (min-width:700px) {
     .news {
         height: 862px;
@@ -226,4 +209,8 @@
         background-repeat: repeat;
         border: 3px #ffffff solid;
         border-radius: 5px;
+    }
+    .watermark {
+        width: 273px;
+        height: 360px;
     }

@@ -2,12 +2,21 @@
 /*toyo*/
 .system{
    width: 80%;
-   height: 1827px;
+   height: 1566px;
     background-image: url(../img/system.png);
   }
   .system1{
-  width: 869px;
-  color: aliceblue;
+    width: 796px;
+    color: #fbecc8;
+    font-size: 29px;
+    border: 2px #eace8f solid;
+    padding: 40px;
+    border-top: unset;
+    background-color: #1d1d1d;
+}
+.system1 a{
+  color: #ffd36a;
+  text-decoration: underline;
 }
   .room{
     height: 900px;
@@ -49,9 +58,9 @@
   }
   p{
     height: 27px;
-    font-size: 18px;
-    background-color: #ffffff70;
-    color: #f5c94b;
+    font-size: 19px;
+    background-color: #000000;
+    color: #ffedd6;
   }
   .recruit div{
     width: 96%;

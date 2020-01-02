@@ -9,6 +9,23 @@
     background-color: #1b1b1b;
     background-size: auto;
 }
+a{
+    color: #ffffff;
+    text-decoration:none;
+    vertical-align: initial;
+}
+.tels{
+    width: 600px;
+    height: 100px;
+    position: relative;
+    top: 240px;
+    left: 236px;
+}
+.tel{
+    width: 600px;
+    height: 100px;
+    background-color: aliceblue;
+}
 .logo{
     background: url(../img/top.png) bottom;
     height: 580px;

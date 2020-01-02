@@ -167,6 +167,15 @@
         display: none;
         
     }
+ 
+    .watermark2{
+        width: 201px;
+        height: 274px;
+        background: top right url(../img/new.png),center url(../img/watermark.png);
+        background-repeat: no-repeat;
+        z-index: 80;
+        position: absolute;
+    }
     .l{
         width: 200px;
         height: 312px;

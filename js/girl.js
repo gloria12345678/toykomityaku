@@ -119,7 +119,7 @@ function loadnews(){
          for(let j = 0; j < sorted[0].length; j++){
            var photo =document.createElement("div");
            photo.setAttribute("class","photo");
-           photo.innerHTML = '<div class="l"><div class="watermark"></div><img src="https://test-cms-alpha.herokuapp.com'+sorted[0][j].profile.avatars[0]+'"></div><div>'+sorted[0][j].profile.name+''+sorted[0][j].profile.age+'</div><div>'+sorted[0][j].profile.time+'</div>';
+           photo.innerHTML = '<div class="l"><div class="watermark2"></div><img src="https://test-cms-alpha.herokuapp.com'+sorted[0][j].profile.avatars[0]+'"></div><div>'+sorted[0][j].profile.name+''+sorted[0][j].profile.age+'</div><div>'+sorted[0][j].profile.time+'</div>';
            schedulesGirls.appendChild(photo);
         
            };

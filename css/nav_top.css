@@ -140,9 +140,6 @@ a{
     width: 200px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    background-size: 80%;
-    background-position: center;
 } 
 .footing{
     display: none;

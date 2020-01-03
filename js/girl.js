@@ -3,8 +3,8 @@ var pcGirlAll = document.getElementById('pcGirlAll');
 var fragment = document.createDocumentFragment();
 var apiList1 = document.getElementById('PcGirlPhoto');
 var myList2 = document.getElementById('catchMynews1');
-var myApi ="https://test-cms-alpha.herokuapp.com/sites/5/profiles.json"
-var myApi1 ="https://test-cms-alpha.herokuapp.com/sites/3/tweets.json"
+var myApi ="https://test-cms-alpha.herokuapp.com/sites/6/profiles.json"
+var myApi1 ="https://test-cms-alpha.herokuapp.com/sites/6/tweets.json"
 function loadIndexStaff(){
   let xhr = new XMLHttpRequest();
   xhr.open("GET",myApi,true);
@@ -73,7 +73,7 @@ function loadnews(){
   loadnews()
 
   var  schedulesGirls= document.getElementById('schedule'); 
-  var myApi3 ="https://test-cms-alpha.herokuapp.com/sites/1/schedules.json"
+  var myApi3 ="https://test-cms-alpha.herokuapp.com/sites/6/schedules.json"
   function addNewSchedules(MyJson){
    for(let i = 0; i < MyJson.length; i++){
      let ss =new Date(MyJson[i].period)

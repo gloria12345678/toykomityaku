@@ -42,7 +42,7 @@
 .girlPhotoBox img{
     width: 90%;
     height: 94%;
-    object-fit: contain;
+    object-fit: cover;
 }
 .girlPhotoName{
     width: 95%;
@@ -57,7 +57,13 @@
 .indexlink{
     width: 900px;
     height: 308px;
-    background-image: url(../img/linksinoku.png);
+    background-image: url(../img/linkkk.gif);
+    margin-top: 50px;
+}
+.indexlink1{
+    width: 900px;
+    height: 308px;
+    background-image: url(../img/event1.png);
     margin-top: 50px;
 }
 .event{
@@ -265,5 +271,5 @@
     }
     .watermark {
         width: 273px;
-        height: 360px;
+        height: 420px;
     }

@@ -36,7 +36,7 @@ a{
 }
 .indexlink{
     width: 1000px;
-    height: 308px;
+    height: 320px;
     background-image: url(../img/linkkk.gif);
     margin-top: 50px;
 }
@@ -76,7 +76,9 @@ a{
 .event{
     height: 800px;
     background-image: url(../img/event.gif);
-    width: 1006px;
+    width: 1050px;
+    background-size: 100%;
+
 }
 .end{
     color: aliceblue;

@@ -24,7 +24,7 @@ function loadIndexStaff(){
             loop: true, 
             speed:1500,
             autoplay:{
-              delay:0,   
+              delay:1,   
               disableOnInteraction:false,
             },
             slidesPerView:4,

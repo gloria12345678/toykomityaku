@@ -37,6 +37,12 @@
   .hotel2{
     background-image: url(../img/hotel3.png);
   }
+  .hotel3{
+    background-image: url(../img/hotel.jpg);
+    height: 773px;
+    width: 900px;
+    margin-top: 50px;
+  }
   .access ,.access1 ,.access2{
     width: 900px;
     height: 300px;

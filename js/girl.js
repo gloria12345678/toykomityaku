@@ -22,12 +22,14 @@ function loadIndexStaff(){
           pcGirlAll.appendChild(girlPhoto);
           var mySwiper = new Swiper ('#focus3', {
             loop: true, 
-            speed:1500,
-            autoplay:{
-              delay:1,   
-              disableOnInteraction:false,
+            slidesPerView: 3,
+            //centeredSlides: true,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
             },
-            slidesPerView:4,
+            speed:1300,
+            autoplay : true,
           });
         }
           for(var i = 0; i < json.length; i++) {

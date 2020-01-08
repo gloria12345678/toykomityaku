@@ -13,11 +13,11 @@ h5{
   font-size: 22px;
 }
 p{
-  background-color: #ffffffab;
   width: 99%;
   font-size: 27px;
   margin: 5px;
-  color: #000000;
+  color: #ffffff;
+  border-bottom: 2px #f9ce9a solid;
   }
 .swiper-container1 {
   width: 400px;
@@ -109,14 +109,14 @@ p{
   .txt h4{
     padding: 5px;
     margin-top: 55px;
-    color: #fbc36d;
-    border: 2px rgba(255, 255, 255, 0.67) solid;
+    color: #ffffff;
+    border-top: 1px #ffffff solid;
     font-size: 14px;
   }
 .txt h4{
-    height: 537px;
-    background-color: #ffffff5c;
-    overflow-y: scroll;
+  height: 537px;
+  overflow-y: scroll;
+  border: 2px #f9cb8e solid;
   }
   /* @media screen and (min-width:420px) {
     h5 {

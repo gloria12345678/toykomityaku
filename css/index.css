@@ -63,7 +63,7 @@
 .indexlink1{
     width: 900px;
     height: 382px;
-    background-image: url(../img/event1.png);
+    background-image: url(../img/event1.gif);
     margin-top: 50px;
 }
 .event{
@@ -93,7 +93,7 @@
 }
 .newsText{
     overflow-y: scroll;
-    border: 2px #ffffff solid;
+    border: 2px #f9bf50 solid;
     border-radius: 10px;
     background-image: url(../img/newsBack.png);
     background-size: auto;
@@ -104,7 +104,7 @@
     width: 900px;
     height: 600px;
     overflow-y: scroll;
-    border: 2px #ffffff solid;
+    border: 2px #f9bf50 solid;
     border-radius: 10px;
     background-image: url(../img/newsBack.png);
     background-size: auto;
@@ -266,7 +266,7 @@
     .swiper-container {
         background-size: 52%;
         background-repeat: repeat;
-        border: 3px #ffffff solid;
+        border: 3px #f9bf50 solid;
         border-radius: 5px;
     }
     .watermark {

@@ -51,10 +51,10 @@
     width: 249px;
     height: 411px;
     float: left;
-    background-color:#54536573;;
-    margin: 11px;
-    color: #ffb200;
-    border: 1px #ffffff solid;
+  /* background-color:#54536573;; */
+  margin: 11px;
+  color: #ffffff;
+  /* border: 1px #ffffff solid; */
     border-radius: 10px;   
 }
 #schedulesGirl0{
@@ -69,7 +69,6 @@
     width: 200px;
     height: 312px;
     margin-top: 17px;
-    border: 1px #ffffff solid;
 }
 .l img{
     object-fit: cover;

@@ -22,7 +22,7 @@ function loadIndexStaff(){
           pcGirlAll.appendChild(girlPhoto);
           var mySwiper = new Swiper ('#focus3', {
             loop: true, 
-            slidesPerView: 3,
+            slidesPerView: 4,
             //centeredSlides: true,
             pagination: {
               el: '.swiper-pagination',

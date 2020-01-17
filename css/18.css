@@ -74,7 +74,7 @@ a{
 }
 
 .event{
-    height: 800px;
+    height: 680px;
     background-image: url(../img/event.gif);
     width: 1006px;
 }
@@ -88,6 +88,28 @@ a{
     background-size: 304px;
     margin-top: 65px;
 }
+.link_page{
+    width: 745px;
+    font-size: 31px;
+}
+.link1 img{
+    height: 100px;
+}
+.hakase img{
+    height: 235px;
+}
+.link_page p{
+    color: #ffffff;
+    font-size: 30px;
+}
+.link_page p a{
+    color: #ffffff;
+    font-size: 30px;
+} 
+.link_page div a{
+    color: #ffffff;
+    font-size: 30px;
+} 
 @media screen and (min-width:1200px) {
     .body{
         width: 100%;

@@ -54,6 +54,33 @@
     vertical-align: middle;
     border: 3px #ff658d solid;
 }
+.wrap{
+    border: 3px solid #ffba5a;
+    width: 900px;
+    height: 280px;
+	position: relative;
+	overflow: hidden;
+}
+
+.wrap ul{
+	overflow: hidden;
+	position:absolute;
+	width: 1600px;
+	left: 0;
+	top: 0;
+	_height:1px;
+}
+
+.wrap ul li{
+	float: left;
+    width: 200px;
+    height: 280px;
+}
+.wrap ul li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
 .indexlink{
     width: 900px;
     height: 308px;

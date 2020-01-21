@@ -14,24 +14,39 @@ function loadIndexStaff(){
         json = JSON.parse(this.responseText);
         console.log(json);
         for(var i = 0; i < json.length; i++) {
-          var girlPhoto =document.createElement("div");
-          girlPhoto.setAttribute("class","swiper-slide");
-          // girlPhoto.setAttribute("id","swiper2");
-          girlPhoto.innerHTML = '<img src="https://test-cms-alpha.herokuapp.com'+json[i].avatars[0]+'"><div  style="width: 229px;height: 300px;"class="watermark"></div>';
+          var girlPhoto =document.createElement("li");
+          girlPhoto.innerHTML = '<img src="https://test-cms-alpha.herokuapp.com'+json[i].avatars[0]+'"><div style="width: 200px;height: 285px;position: absolute;top: 0px;"class="watermark watermark1"></div>';
           fragment.appendChild(girlPhoto);
           pcGirlAll.appendChild(girlPhoto);
-          var mySwiper = new Swiper ('#focus3', {
-            loop: true, 
-            slidesPerView: 4,
-            //centeredSlides: true,
-            pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-            },
-            speed:1300,
-            autoplay : true,
-          });
         }
+        $(function(){
+          var oul = $('.wrap ul');
+          var oulHtml = oul.html();
+          oul.html(oulHtml+oulHtml)
+          var timeId = null;
+        
+          var ali = $('.wrap ul li');
+          var aliWidth = ali.eq(0).width();
+          var aliSize = ali.size();
+          var ulWidth = aliWidth*aliSize;
+          oul.width(ulWidth);	//1600px
+          var speed = 2;
+          function slider(){
+            if(speed<0){
+              if(oul.css('left')==-ulWidth/2+'px'){
+               oul.css('left',0);
+               }
+               oul.css('left','+=-2px');
+            }
+            if(speed>0){
+              if(oul.css('left')=='0px'){
+               oul.css('left',-ulWidth/2+'px');
+               }
+               oul.css('left','+='+speed+'px');
+            }
+           }
+           timeId = setInterval(slider,30);
+        });
           for(var i = 0; i < json.length; i++) {
             var girlPhoto =document.createElement("div");
             girlPhoto.setAttribute("class","swiper-slide");

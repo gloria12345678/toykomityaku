@@ -20,8 +20,8 @@ p{
   border-bottom: 2px #f9ce9a solid;
   }
 .swiper-container1 {
-  width: 400px;
-  height: 618px;
+  width: 470px;
+  height: 688px;
     z-index: 0;
     position: absolute;
     margin: 4px;
@@ -63,7 +63,7 @@ p{
     justify-content: center;
   }
   .staBigPhotoffBox{
-    height: 652px;
+    height: 705px;
   }
   .staPhotoffBoxSmall ul li{
     margin: 3px;
@@ -76,8 +76,8 @@ p{
     width: 92%;
   }
   .watermark {
-    width: 356px;
-    height: 585px;
+    width: 419px;
+    height: 645px;
   }
   .watermark1 {
     width: 106px;
@@ -99,7 +99,7 @@ p{
     padding-left: 2px;
   }
   .txt{
-    left: 202px;
+    left: 262px;
     position: relative;
     width: 364px;
     height: 400px;

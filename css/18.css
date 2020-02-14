@@ -21,6 +21,11 @@ a{
     top: 240px;
     left: 236px;
 }
+.tele{
+    width: 529px;
+    height: 124px;
+    background-image: url(../img/tel.png);
+}
 .tel{
     width: 600px;
     height: 100px;
@@ -41,7 +46,7 @@ a{
     margin-top: 50px;
 }
 .a18x{
-    height: 182px;
+    height: 150px;
     width: 620px;
     display: flex;
     align-items: center;

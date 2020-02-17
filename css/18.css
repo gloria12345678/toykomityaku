@@ -23,7 +23,7 @@ a{
 }
 .tele{
     width: 529px;
-    height: 124px;
+    height: 115px;
     background-image: url(../img/tel.png);
 }
 .tel{
@@ -60,18 +60,16 @@ a{
     text-align:center;
     display: table-cell;
     vertical-align:middle;
-    border-radius: 20px;
     background: url(../img/18a.png)
 }
 .a18x2{
-    width: 221px;
+    width: 225px;
     height: 71px;
     font-size: 20px;
     color: #ffffff;
     text-align:center;
     display: table-cell;
     vertical-align:middle;
-    border-radius: 20px;
     background: url(../img/18b.png)
 }
 .a18x a p{

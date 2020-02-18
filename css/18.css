@@ -79,7 +79,8 @@ a{
 .event{
     height: 680px;
     background-image: url(../img/event.gif);
-    width: 1006px;
+    width: 965px;
+
     background-size: contain;
 
 }

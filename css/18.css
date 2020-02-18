@@ -77,11 +77,9 @@ a{
 }
 
 .event{
-    height: 680px;
-    background-image: url(../img/event.gif);
-    width: 962px;
-    background-size: contain;
-
+    height: 737px;
+    background-image: url(../img/even.gif);
+    width: 1008px;
 }
 .end{
     color: aliceblue;
@@ -94,11 +92,26 @@ a{
     margin-top: 65px;
 }
 .link_page{
-    width: 745px;
+    width: 900px;
     font-size: 31px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.link1{
+    width: 301px;
+    float: left;
+}
+.link2{
+    width: 300px;
+    float: left;
+}
+.link_page img{
+    width: 300px;
 }
 .link1 img{
-    height: 100px;
+    background-size: auto;
 }
 .hakase img{
     height: 235px;

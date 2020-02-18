@@ -80,6 +80,9 @@ a{
     height: 680px;
     background-image: url(../img/event.gif);
     width: 1006px;
+    background-size: contain;
+}
+
 }
 .end{
     color: aliceblue;

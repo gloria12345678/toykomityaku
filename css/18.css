@@ -52,6 +52,13 @@ a{
     align-items: center;
     justify-content: center;
 }
+.a18x3{
+    height: 150px;
+    width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .a18x1{
     width: 279px;
     height: 90px;

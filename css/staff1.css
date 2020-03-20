@@ -25,12 +25,6 @@ p{
     z-index: 0;
     position: absolute;
     margin: 4px;
-    background-image: url(../img/photoBack.png);
-    background-color: #ffd6d6;
-    background-repeat: repeat;
-    border: 3px #f988a6 solid;
-    border-radius: 5px;
-    background-size: 30%;
   }
   .staff{
     height: 1046px;
@@ -50,8 +44,8 @@ p{
     justify-content: center;
   }
   .swiper-slide1 img{
-    width: 90%;
-    height: 94%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
   .staPhotoffBox{
@@ -76,8 +70,9 @@ p{
     width: 92%;
   }
   .watermark {
-    width: 419px;
-    height: 645px;
+    width: 470px;
+    height: 686px;
+
   }
   .watermark1 {
     width: 106px;

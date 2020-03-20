@@ -21,17 +21,18 @@ a{
     vertical-align: initial;
 }
 .body{
-    width: 1100px;
+    width: 1050px;
     background: bottom left no-repeat url(../img/footback.png),repeat-y url(../img/back.png);
     background-color: #1b1b1b;
     background-size: auto;
 }
 .tels{
-    width: 600px;
+    width: 500px;
     height: 100px;
     position: relative;
-    top: 240px;
-    left: 236px;
+    top: 190px;
+    left: 179px;
+    margin: unset;
 }
 .tel{
     width: 600px;
@@ -114,8 +115,8 @@ a{
     vertical-align: middle;
 }
 .top{
-    height: 500px;
-    width: 1100px;
+    height: 448px;
+    width: 1050px;
     background-image: url(../img/top.png);
     flex-wrap: wrap;
     align-items: center;
@@ -123,12 +124,12 @@ a{
 
 }
 .navLage{
-    width: 1100px;
+    width: 1051px;
     height:120px;
 }
 .navButton{
     height:50px;
-    width: 14.27%;
+    width: 14.286%;
     background-color: chocolate;
     float: left;
 }
@@ -164,18 +165,18 @@ a{
     justify-content: center;
 }
 .footbtn{
-    width: 1002px;
+    width: 900px;
     height: 334px;
     overflow-y: scroll;
     border-radius: 10px;
     background-image: url(../img/endlist.png);
-    background-size: auto;
+    background-size: inherit;
     background-position: bottom;
     background-position-x: right;
 
 }
 .footnav a{
-    width: 500px;
+    width: 400px;
     height: 109px;
     float: left;
 }

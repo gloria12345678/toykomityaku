@@ -66,7 +66,7 @@ function loadMySchedules(){
        for(let j = 0; j < sorted[k].length; j++){
          var photo =document.createElement("div");
          photo.setAttribute("class","photo");
-         photo.innerHTML = '<div class="l" id="l'+k+''+j+'"><div class="watermark"></div><img src="https://test-cms-alpha.herokuapp.com'+sorted[k][j].profile.avatars[0]+'"></div><div>'+sorted[k][j].profile.name+''+sorted[k][j].profile.age+'</div><div>'+sorted[k][j].profile.time+'</div>';
+         photo.innerHTML = '<div class="l" id="l'+k+''+j+'"><div class="watermark"></div><img src="https://test-cms-alpha.herokuapp.com'+sorted[k][j].profile.avatars[0]+'"></div><div>'+sorted[k][j].profile.name+'&nbsp;'+sorted[k][j].profile.age+'さい</div><div>'+sorted[k][j].profile.time+'</div>';
          schedulesGirl.appendChild(photo);
          var l = document.getElementById("l"+k+j);
          //console.log(l)

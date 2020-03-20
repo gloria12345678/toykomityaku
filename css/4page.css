@@ -1,12 +1,12 @@
 /*10/8*/
 /*toyo*/
 .system{
-   width: 80%;
-   height: 1665px;
+  width: 85.7%;
+  height: 1700px;
     background-image: url(../img/system.png);
   }
   .system1{
-    width: 796px;
+    width: 816px;
     color: #fbecc8;
     font-size: 29px;
     border: 2px #eace8f solid;
@@ -58,7 +58,7 @@
     background-image: url(../img/link2.gif);
   }
   .recruit{
-    width: 70%;
+    width: 90%;
     border: 4px #fdf258 solid;
 
   }

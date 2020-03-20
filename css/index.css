@@ -114,7 +114,7 @@
     background-image: url(../img/twitter.png);
 }
 .scheduleTitle{
-    height: 300px;
+    height: 200px;
     width: 800px;
     background-image: url(../img/schedule.png);
 }
@@ -161,7 +161,6 @@
 
 .schedule{
     width: 900px;
-    padding-top: 210px;
 }
     .schedulesGirl{
         width: 100px;
@@ -183,14 +182,10 @@
         padding: 21px;
     }
     .photo{
-        width: 249px;
-        height: 411px;
+        width: 300px;
+        height: 556px;
         float: left;
-        background-color:#54536573;;
-        margin: 11px;
         color: #ffb200;
-        border: 1px #ffffff solid;
-        border-radius: 10px;   
     }
     #schedulesGirl0{
         display: block;
@@ -202,18 +197,17 @@
     }
  
     .watermark2{
-        width: 201px;
-        height: 274px;
+        width: 275px;
+        height: 405px;
         background: top right url(../img/new.png),center url(../img/watermark.png);
         background-repeat: no-repeat;
         z-index: 80;
         position: absolute;
     }
     .l{
-        width: 200px;
-        height: 312px;
+        width: 275px;
+        height: 448px;
         margin-top: 17px;
-        border: 1px #ffffff solid;
     }
     .l img{
         object-fit: cover;

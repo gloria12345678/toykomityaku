@@ -55,7 +55,6 @@
     border: 3px #ff658d solid;
 }
 .wrap{
-    border: 3px solid #ffba5a;
     width: 900px;
     height: 280px;
 	position: relative;
@@ -68,7 +67,6 @@
 	width: 1600px;
 	left: 0;
 	top: 0;
-	_height:1px;
 }
 
 .wrap ul li{
@@ -83,7 +81,7 @@
 } 
 .indexlink{
     width: 900px;
-    height: 308px;
+    height: 378px;
     background-image: url(../img/linkkk.gif);
     margin-top: 50px;
 }
@@ -95,7 +93,7 @@
 }
 .event{
     width: 900px;
-    height: 675px;
+    height: 828px;
     background-image: url(../img/even.gif);
 }
 .news{
@@ -120,7 +118,6 @@
 }
 .newsText{
     overflow-y: scroll;
-    border: 2px #f9bf50 solid;
     border-radius: 10px;
     background-image: url(../img/newsBack.png);
     background-size: auto;
@@ -131,7 +128,6 @@
     width: 900px;
     height: 600px;
     overflow-y: scroll;
-    border: 2px #f9bf50 solid;
     border-radius: 10px;
     background-image: url(../img/newsBack.png);
     background-size: auto;
@@ -287,7 +283,7 @@
     .swiper-container {
         background-size: 52%;
         background-repeat: repeat;
-        border: 3px #f9bf50 solid;
+        /* border: 3px #f9bf50 solid; */
         border-radius: 5px;
     }
     .watermark {

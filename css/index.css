@@ -40,8 +40,8 @@
 
 }
 .girlPhotoBox img{
-    width: 90%;
-    height: 94%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .girlPhotoName{
@@ -287,6 +287,6 @@
         border-radius: 5px;
     }
     .watermark {
-        width: 273px;
-        height: 420px;
+        width: 300px;
+        height: 452px;
     }

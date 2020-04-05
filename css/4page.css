@@ -22,7 +22,7 @@
     height: 900px;
     background-image: url(../img/room.png);
   }
-  .hotel ,.hotel1 ,.hotel2{
+  .hotel ,.hotel1 ,.hotel2 ,.hotel4 ,.hotel5{
     width: 900px;
    
     height: 83px;
@@ -42,6 +42,12 @@
     height: 773px;
     width: 900px;
     margin-top: 50px;
+  }
+  .hotel4{
+    background-image: url(../img/hotel4.png);
+  }
+  .hotel5{
+    background-image: url(../img/hotel5.png);
   }
   .access ,.access1 ,.access2{
     width: 900px;
@@ -64,7 +70,7 @@
   }
   p{
     height: 27px;
-    font-size: 19px;
+    font-size: 22px;
     background-color: #000000;
     color: #ffedd6;
   }

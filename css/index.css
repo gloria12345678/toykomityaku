@@ -86,10 +86,16 @@
     margin-top: 50px;
 }
 .indexlink1{
-    width: 900px;
-    height: 382px;
-    background-image: url(../img/event1.gif);
+    width: 562px;
+    height: 850px;
     margin-top: 50px;
+}
+.bbbigPhoto{
+    width: 562px;
+    height: 850px;
+    margin-top: 50px;
+    color: #ffffff;
+    font-size: 30px;
 }
 .event{
     width: 900px;

@@ -3,6 +3,7 @@ var pcGirlAll = document.getElementById('pcGirlAll');
 var fragment = document.createDocumentFragment();
 var apiList1 = document.getElementById('PcGirlPhoto');
 var myList2 = document.getElementById('catchMynews1');
+var myList3 = document.getElementById('bbbigPhoto');
 var myApi ="https://test-cms-alpha.herokuapp.com/sites/6/profiles.json"
 var myApi1 ="https://test-cms-alpha.herokuapp.com/sites/6/tweets.json"
 function loadIndexStaff(){
@@ -13,6 +14,10 @@ function loadIndexStaff(){
         let json =new Array
         json = JSON.parse(this.responseText);
         console.log(json);
+        var bbbigPhoto =document.createElement("div");
+        bbbigPhoto.setAttribute("class","bbbigPhoto");
+        bbbigPhoto.innerHTML = '<div class="girlbbbigPhoto"><img src="https://test-cms-alpha.herokuapp.com'+json[0].avatars[0]+'"></div><div style="width: 330px;height: 50px;">'+json[0].name+'ちゃん&nbsp;&nbsp;&nbsp;'+json[1].age+'さい</div><div style="width: 338px;height: 50px;">'+json[1].abstract+'</div>';
+        myList3.appendChild(bbbigPhoto);
         for(var i = 0; i < json.length; i++) {
           var girlPhoto =document.createElement("li");
           girlPhoto.innerHTML = '<img src="https://test-cms-alpha.herokuapp.com'+json[i].avatars[0]+'"><div style="width: 200px;height: 285px;position: absolute;top: 0px;"class="watermark watermark1"></div>';
@@ -58,6 +63,20 @@ function loadIndexStaff(){
               autoplay:2000,
             });
           }
+      }              
+  }
+  xhr.send();
+}
+
+function OneStaff(){
+  let xhr = new XMLHttpRequest();
+  xhr.open("GET",myApi,true);
+  xhr.onload = function(){
+      if(this.status == 200){
+        let json =new Array
+        json = JSON.parse(this.responseText);
+        console.log(json);
+        
       }              
   }
   xhr.send();

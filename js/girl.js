@@ -16,7 +16,7 @@ function loadIndexStaff(){
         console.log(json);
         var bbbigPhoto =document.createElement("div");
         bbbigPhoto.setAttribute("class","bbbigPhoto");
-        bbbigPhoto.innerHTML = '<div class="girlbbbigPhoto"><img src="https://test-cms-alpha.herokuapp.com'+json[0].avatars[0]+'"></div><div style="width: 330px;height: 50px;">'+json[0].name+'ちゃん&nbsp;&nbsp;&nbsp;'+json[1].age+'さい</div><div style="width: 338px;height: 50px;">'+json[1].abstract+'</div>';
+        bbbigPhoto.innerHTML = '<div class="girlbbbigPhoto"><img src="https://test-cms-alpha.herokuapp.com'+json[0].avatars[0]+'"></div><div style="width: 330px;height: 50px;">'+json[0].name+'ちゃん&nbsp;&nbsp;&nbsp;'+json[1].age+'さい</div><div style="width: 450px;height: 50px;">'+json[1].abstract+'</div>';
         myList3.appendChild(bbbigPhoto);
         for(var i = 0; i < json.length; i++) {
           var girlPhoto =document.createElement("li");
